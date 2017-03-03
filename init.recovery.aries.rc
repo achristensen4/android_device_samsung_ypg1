@@ -7,8 +7,8 @@ on init
 
 on fs
 # set up LVM volumes
-    exec /lvm/sbin/lvm vgscan --mknodes --ignorelockingfailure
-    exec /lvm/sbin/lvm vgchange -aly --ignorelockingfailure
+    exec /lvm/sbin/lvm vgscan --mknodes
+    exec /lvm/sbin/lvm vgchange -aly
 	
     # mount /system partition
     mount ext4 /dev/lvpool/system /system
