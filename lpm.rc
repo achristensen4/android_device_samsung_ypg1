@@ -4,6 +4,7 @@ on early-init
 on init
 
 sysclktz 0
+loglevel 3
 
 on boot
     # set cpu governor to powersave while in charging mode
